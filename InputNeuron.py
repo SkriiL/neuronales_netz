@@ -1,9 +1,5 @@
-from Neuron import Neuron
-
-
-class InputNeuron(Neuron):
+class InputNeuron():
     def __init__(self):
-        super().__init__(self, Neuron)
         self.value = 0
 
     def get_value(self):

@@ -1,10 +1,7 @@
-from Neuron import Neuron
-
-
 class Connection:
-    def __init__(self):
-        self.neuron = Neuron
-        self.weight = 0
+    def __init__(self, neuron, weight=0):
+        self.neuron = neuron
+        self.weight = weight
 
     def connection(self, neuron, weight):
         self.neuron = neuron
