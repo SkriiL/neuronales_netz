@@ -9,3 +9,6 @@ class Connection:
 
     def get_value(self):
         return self.neuron.get_value() * self.weight
+
+    def add_weight(self, weight_delta):
+        self.weight += weight_delta

@@ -66,7 +66,7 @@ class NeuralNetwork:
                     out_neuron.add_connection(Connection(hid_neuron, weights[index]))
                     index += 1
 
-    def train(self, counter=0, weights=[], value=0, rate=0.05):
+    def train(self, counter=0, weights=[], value=0, rate=0.5):
         weights = weights
         goal = 2
         if value > goal + 0.00001 or value < goal - 0.00001:
